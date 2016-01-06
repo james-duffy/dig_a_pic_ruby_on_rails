@@ -1,0 +1,49 @@
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-md-12 accountPage">
+			<h1>New Order</h1>
+
+			<% if @buyer.cards.empty?  %>
+
+			<%= form_tag photo_orders_path do %>
+			<div class="orders">
+				<p>
+					<%= label_tag(:number) %>
+					<%= text_field_tag(:number) %>
+				</p>
+				<p>
+					<%= label_tag(:expiration_month) %>
+					<%= text_field_tag(:expiration_month) %>
+				</p>
+				<p>
+					<%= label_tag(:expiration_year) %>
+					<%= text_field_tag(:expiration_year) %>
+				</p>
+				<p>
+					<%= label_tag(:cvv) %>
+					<%= text_field_tag(:cvv) %>
+				</p>
+			</div>
+			<p>
+				<%= submit_tag("Confirm", class: "btn btn-primary") %>
+			</p>
+			<% end %>
+
+
+	<% else %>
+	
+	<p>
+ 
+	   <%= link_to( "Confirm", photo_orders_path, { method: :post, class: "btn btn-primary"})%>
+	</p>
+	
+
+	
+
+<% end %>
+
+			
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,170 @@
+// Place all the styles related to the access controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 2em;
+}
+.logopicture {
+    height: 70px;
+    margin-top: -12%;
+}
+.lead {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(<%= asset_path('Birds-Dancer-Laria-Saunders-3708.jpg') %>) no-repeat center center;
+    // background: url("/assets/Birds-Dancer-Laria-Saunders-3708.jpg") no-repeat center center;
+    background-size: cover;
+    max-height: 750px;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+}
+
+.signup {
+    margin-top: -235px;
+}
+
+.signup > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+		.intro-divider {
+		    width: 400px;
+		}
+
+		.intro-message > h3 {
+		    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		}
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 2em;
+    }
+
+    ul.intro-social-buttons > li {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+		max-width: 100%;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    width:100%;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(<%= asset_path('Water-Photos-Drop-of-Zen-2w-Laria.jpg') %>) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:767px) {
+  ul.banner-social-buttons {
+      float: left;
+      margin-top: 15px;
+  }
+  .banner h2 {
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+      font-size: 2.2em;
+  }
+
+  ul.banner-social-buttons > li {
+      display: block;
+      margin-bottom: 20px;
+      padding: 0;
+  }
+
+  ul.banner-social-buttons > li:last-child {
+      margin-bottom: 0;
+  }
+  .network-name {
+		font-size: .8em;
+  }
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

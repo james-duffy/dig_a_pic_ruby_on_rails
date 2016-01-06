@@ -1,0 +1,36 @@
+<div class="jumbotron">
+	<div class="row">
+		<div class="col-md-12 accountPage">
+			<h2>Link your bank account to recieve payment for your photos</h2>
+
+			
+			<%= form_for @bank, url: user_banks_path(@user.id) do |f|%>
+			<div class="bankform">
+				<p>
+					<%= f.label(:account_number) %>
+					<br>
+					<%= text_field_tag(:account_number) %>
+				</p>
+				<p>
+					<%= f.label(:account_type) %>
+					<br>
+					<%= text_field_tag(:account_type, "Checking", disabled: true) %>
+				</p>
+				<p>
+					<%= f.label(:name) %>
+					<br>
+					<%= text_field_tag(:name, "#{@user.firstname} #{@user.lastname}", disabled: true) %>
+				</p>
+				<p>
+					<%= f.label(:routing_number) %>
+					<br>
+					<%= text_field_tag(:routing_number) %>
+				</p>
+			</div>
+			<p>
+				<%= f.submit("Confirm", class: "btn btn-primary") %>
+			</p>
+			<% end %>
+		</div>
+	</div>
+</div>

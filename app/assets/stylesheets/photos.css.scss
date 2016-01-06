@@ -1,0 +1,76 @@
+// Place all the styles related to the photos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.jumbotron {
+    margin: auto;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #e7e7e7;
+    border-radius: 25px;   
+}
+.wide {
+    margin: auto;
+    width: 100%;
+    border: 1px solid #e7e7e7;   
+}
+.middle {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#photo_title {  
+  width: 100%;  
+}  
+#photo_price {
+	display: block;
+}
+#tags {
+	font-size: 1em;
+	font: bold;
+}
+#photo_categories_1, #photo_categories_2, #photo_categories_3, #photo_categories_4  {
+	margin-right: 5px;
+}
+#photo_categories_2, #photo_categories_3, #photo_categories_4 {
+	margin-left: 10px;
+}
+.btn-info {
+	margin-left: -15px;
+}
+.pic {
+    text-align: center;
+}
+.edit-button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.accountPage {
+    text-align: center;
+}
+.formContent {
+    text-align: right;
+    width: 45%;
+    margin: 0 auto;
+}
+.forgotpass {
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+}
+.bankform {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+}
+.orders {
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+}
